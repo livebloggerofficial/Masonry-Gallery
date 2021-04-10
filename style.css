@@ -1,0 +1,41 @@
+.gallery-container {
+    width: 700px;
+    column-count: 3;
+    column-gap: 8px;
+    margin: 24px auto;
+}
+
+.gallery-container .image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 400ms;
+}
+
+.gallery-container .image {
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.gallery-container .image:hover img {
+    transform: scale(1.3);
+}
+
+.gallery-container .image .title {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background: #222;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.gallery-container .image:hover .title {
+    opacity: 1;
+    bottom: 0;
+}
